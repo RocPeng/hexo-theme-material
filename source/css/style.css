@@ -2080,8 +2080,11 @@ a {
     font-size: 10px;
     text-align: center;
     white-space: nowrap;
-    vertical-align: baseline
+    vertical-align: baseline;
 }
+
+
+
 .sidebar .sidebar-badge.badge-circle {
     border-radius: 50%
 }
@@ -4874,3 +4877,42 @@ a {
 .fa-percent:before {
     content: "\f295"
 }
+/*自定义左侧分级分类的样式*/
+.sidebar .sidebar_archives-list{
+    padding-left: 0;
+}.sidebar .sidebar_archives-list-child{
+    /*padding-left: 30px;*/
+}
+.sidebar .sidebar_test-link{
+    color:red;
+    background-color: red;
+}
+.sidebar_archives-list-item .sidebar_archives-list-link:hover{
+}
+.sidebar .sidebar-nav .sidebar_archives-list li{
+    font-size: 18px;
+}
+.sidebar .sidebar-nav .sidebar_archives-list li a{
+    display: block;
+}
+.sidebar .sidebar_archives-list-count{
+    color: white;
+    /*position: absolute;*/
+    /*margin-top: -36px;*/
+
+   /* margin-left: -30px;
+    display: none;*/
+    min-width: 24px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 3px;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #0097A7;
+    position: absolute;
+    right: 16px;
+    top: 12px;
+}
+
