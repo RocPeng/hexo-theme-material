@@ -2,16 +2,21 @@
 <footer class="mdl-mini-footer" id="bottom">
     <% if(theme.scheme === 'Paradox') { %>
         <!-- Paradox Footer Left Section -->
-        <%- partial('_partial/footer-left') %>
-
-        <!--Copyright-->
-        <div id="copyright">
-            Copyright&nbsp;©&nbsp;
+		<!--Copyright-->
+		<div class="mdl-mini-footer--left-section sns-list">
+		            Copyright&nbsp;©&nbsp;
             <script type="text/javascript">
                 var fd = new Date();
                 document.write(fd.getFullYear());
             </script>
             &nbsp;<%- config.title %>
+			<div class="footer-develop-div"><a href="http://www.miitbeian.gov.cn/" target="_blank" class="footer-develop-a">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp浙ICP备17005912号</a></div>
+
+		</div>
+		
+        <!-- link -->
+        <div id="copyright">
+			<div class="footer"><%- partial('_partial/footer-left-roc') %>Roc-Lyuke<%- partial('_partial/footer-left-roc') %></div>
         </div>
 
         <!-- Paradox Footer Right Section -->
@@ -26,8 +31,8 @@
 
         <div class="mdl-mini-footer--right-section">
             <div>
-                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
                 <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+				<div class="footer-develop-div">不可描述 - <a href="httt://falsemark.cn/admin" target="_blank" class="footer-develop-a">入口</a></div>
             </div>
         </div>
     <% } %>

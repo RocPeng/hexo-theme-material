@@ -85,23 +85,22 @@ fonts: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "
 # SNS Menu
 sns:
     email: youremail@email.com
-    facebook: "https://www.facebook.com/facebook"
-    twitter: "https://twitter.com/twitter"
-    googleplus: "https://www.google.com/"
-    weibo: 
-    instagram: 
-    tumblr: 
-    github: 
-    linkedin: 
-    zhihu: 
-    bilibili: 
-    telegram: 
+    github: "https://github.com/RocPeng"
+    zhihu: "https://www.zhihu.com/people/Roc_Peng/activities"
+    csdn: "http://blog.csdn.net/qq1072313099"
+    bilibili: "https://github.com/RocPeng"
+    
+sns2:
+    github: "https://github.com/Lyuke-liu"
+    zhihu: "https://www.zhihu.com/people/liu-kun-3-92/activities"
+    csdn: "http://blog.csdn.net/welcome031"
+    steam: "https://steamcommunity.com/profiles/76561198217405991/" 
 
 # SNS Share Switch
 sns_share:
-    twitter: true
-    facebook: true
-    googleplus: true
+    twitter: false
+    facebook: false
+    googleplus: false
     weibo: true
     linkedin: false
     qq: false
@@ -123,7 +122,7 @@ pages:
         #icon: person
 
 # Qrcode for redirect at other device
-qrcode: true
+qrcode: false
 
 # ---------------------------------------------------------------
 # Integrated Services
