@@ -1,10 +1,25 @@
 <script>
     var randomNum;
-
+	var mycars = new Array();
+	
+	function isRepeat(arr1,num) {
+        var arr=arr1.slice(0);
+        arr.push(num);
+        var hash = {};
+        for (var i in arr) {
+            if (hash[arr[i]])
+                return true;
+            hash[arr[i]] = true;
+        }
+        return false;
+    }
+	
     var locatePost = $('.locate-thumbnail-symbol').next();
     for(var i = 0; i < <%= config.per_page %>; i++) {
-        randomNum = Math.floor(Math.random() * <%= theme.thumbnail.random_amount %> + 1);
-
+        randomNum = Math.round(Math.random() * <%= theme.thumbnail.random_amount %> + 1);
+		while(isRepeat(mycars,randomNum)){randomNum = Math.round(Math.random() * <%= theme.thumbnail.random_amount %> + 1);}
+		mycars[i] = randomNum;
+		
         locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
         locatePost.children('.post_thumbnail-random').css('background-image', 'url(' + '<%= theme.img.random_thumbnail %>' + randomNum + '.png' + ')')
 
