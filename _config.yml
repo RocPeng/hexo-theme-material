@@ -59,8 +59,8 @@ thumbnail:
 #         color available value: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow
 #         type available value: A (animal), C (culture), N (nature), S (space), T (travel)
 background:
-    purecolor: "#F5F5F5"
-    #bgimg: "/img/bg.png"
+     #purecolor: "#F5F5F5"
+    bgimg: "http://olilzmmvk.bkt.clouddn.com//img/blog_bg/backbg_8.jpg"
     bing:
         enable: false
         parameter:
