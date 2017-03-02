@@ -26,7 +26,7 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "Hi, nice to meet you"
+    slogan: "你若安好 便是晴天"
     theme_color: "#0097A7"
     theme_sub_color: "#00838F"
     hyperlink_color: "#616161"
@@ -60,7 +60,7 @@ thumbnail:
 #         type available value: A (animal), C (culture), N (nature), S (space), T (travel)
 background:
      #purecolor: "#F5F5F5"
-    bgimg: "http://olilzmmvk.bkt.clouddn.com//img/blog_bg/backbg_8.jpg"
+    bgimg: "http://olilzmmvk.bkt.clouddn.com//img/blog_bg/backbg_17.jpg"
     bing:
         enable: false
         parameter:
@@ -84,7 +84,7 @@ fonts: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "
 
 # SNS Menu
 sns:
-    email: youremail@email.com
+    email: 假印次品
     github: "https://github.com/RocPeng"
     zhihu: "https://www.zhihu.com/people/Roc_Peng/activities"
     csdn: "http://blog.csdn.net/qq1072313099"
@@ -122,7 +122,7 @@ pages:
         icon: assignment
 
 # Qrcode for redirect at other device
-qrcode: false
+qrcode: true
 
 # ---------------------------------------------------------------
 # Integrated Services

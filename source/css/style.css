@@ -880,15 +880,16 @@ a {
     margin-top: 5pc;
 	padding-left:220px;	
 	padding-right:170px;
-    height: 90px;
+    height: 100px;
     background-color:#f5f5f5;
     opacity: 0.8;
     align-items: center
 }
 @media screen and (max-width: 840px) {
     #scheme-Paradox .material-layout .mdl-mini-footer {
-        padding: 30px 0 20px 0;
-        height: 200px;
+        height: 120px;
+		padding-left:10px;	
+		padding-right:10px;
         background-color:#f5f5f5;
         opacity: 0.8;
     }
@@ -989,7 +990,8 @@ a {
 #scheme-Paradox #copyright {
     margin-left: auto;
     margin-right: auto;
-    text-align: center
+    text-align: center;
+	margin-top: 30px
 }
 @media screen and (min-width: 481px) and (max-width: 840px) {
     #scheme-Paradox #copyright{
@@ -1388,7 +1390,7 @@ a {
 .sidebar .sidebar-image img {
     width: 54px;
     height: 54px;
-    margin: 16px;
+    margin: 16px 16px 16px 16px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, .2);
     -webkit-transition: all .2s ease-in-out;
@@ -1870,7 +1872,7 @@ a {
   white-space:nowrap;
   padding: 0;
   list-style: none;
-  padding: 0 16px;
+  padding: 0 16px 0 16px;
 }
 .post-toc-child{
   list-style: none;
