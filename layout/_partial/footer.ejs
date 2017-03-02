@@ -4,21 +4,42 @@
         <!-- Paradox Footer Left Section -->
 		<!--Copyright-->
 		<div class="mdl-mini-footer--left-section sns-list">
-		            Copyright&nbsp;©&nbsp;
-            <script type="text/javascript">
-                var fd = new Date();
-                document.write(fd.getFullYear());
-            </script>
-            &nbsp;<%- config.title %>
-			<div class="footer-develop-div"><a href="http://www.miitbeian.gov.cn/" target="_blank" class="footer-develop-a">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp浙ICP备17005912号</a></div>
-
 		</div>
 		
         <!-- link -->
         <div id="copyright">
 			<div class="footer"><%- partial('_partial/footer-left-roc') %>Roc-Lyuke<%- partial('_partial/footer-left-lyuke') %></div>
+			Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;<%- config.title %>
+			<a href="http://www.miitbeian.gov.cn/" target="_blank" class="footer-develop-a">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp浙ICP备17005912号&nbsp&nbsp&nbsp&nbsp</a>Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a><a href="http://falsemark.cn/admin" target="_blank" class="footer-develop-a">&nbsp&nbspHEY</a></br>
+			
+			<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span> <script language="javascript"> 
+				var now = new Date();
+				function createtime(){
+					var grt= new Date("01/28/2017 00:00:00");
+					now.setTime(now.getTime()+250);
+					days = (now - grt ) / 1000 / 60 / 60 / 24;
+					dnum = Math.floor(days);
+					hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+					hnum = Math.floor(hours);
+					if(String(hnum).length ==1 ){hnum = "0" + hnum;}
+					minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+					mnum = Math.floor(minutes);
+					if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+					seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+					snum = Math.round(seconds);
+					if(String(snum).length ==1 ){snum = "0" + snum;}
+					document.getElementById("timeDate").innerHTML = "它陪我度过了"+dnum+"天";
+					document.getElementById("times").innerHTML = hnum + "小时" + mnum + "分" + snum + "秒";
+				}
+				setInterval("createtime()",250); 
+			</script>
+			
         </div>
-
         <!-- Paradox Footer Right Section -->
 
         <!--
@@ -31,8 +52,6 @@
 
         <div class="mdl-mini-footer--right-section">
             <div>
-                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
-				<div class="footer-develop-div">不可描述 - <a href="http://falsemark.cn/admin" target="_blank" class="footer-develop-a">入口</a></div>
             </div>
         </div>
     <% } %>
